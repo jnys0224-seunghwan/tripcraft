@@ -16,7 +16,7 @@ interface PromptConfig {
     travelStyle: string,
     budget: string
   ) => string;
-  schema: object;
+  schema: Record<string, unknown>;
 }
 
 const configs: Record<RecommendType, PromptConfig> = {
